@@ -18,3 +18,7 @@ openssl req -newkey rsa:2048 \
   -keyout key.pem \
   -subj "/C=BR/ST=Sao Paulo/L=Sao Paulo/O=Your Organization/OU=Your Unit/CN=localhost"
   ```
+### Add Go Debug
+```shell
+echo 'export GODEBUG=x509ignoreCN=0' >> ~/.zshrc
+```
