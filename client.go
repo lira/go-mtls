@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	// Request /hello over port 8080 via the GET method
-	r, err := http.Get("http://localhost:8080/hello")
+	// Request /hello over HTTPS port 8443 via the GET method
+	r, err := http.Get("https://localhost:8443/hello")
 	if err != nil {
 		log.Fatal(err)
 	}

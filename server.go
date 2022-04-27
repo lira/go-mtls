@@ -16,5 +16,5 @@ func main() {
 	http.HandleFunc("/hello", helloHandler)
 
 	// Listen to port 8080 and wait
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServeTLS(":8443", "cert.pem", "key.pem", nil))
 }
